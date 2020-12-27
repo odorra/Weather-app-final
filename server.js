@@ -32,5 +32,6 @@ app.get('/getData', (req, res) => {
 app.post('/postData', (req, res) => {
         //replace url with a string of the post route url
         //code to add data to endpoint object
-    projectData.temp = req.body.temp
+    projectData = req.body
+    res.send(projectData)
     });
