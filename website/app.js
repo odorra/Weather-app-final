@@ -4,8 +4,8 @@ const feeling = document.getElementById("feelings");
 
 const zipInput = document.getElementById("zip");
 // Create a new date instance dynamically with JS
-let d = newDate()
-let newDate = d.getMonth()+ 1 + "."+ d.getDate()+'.'+ d.getFullYear();
+let d = newDate();
+let newDate = d.getMonth() + 1 + "." + d.getDate() + "." + d.getFullYear();
 const baseUrl = "https://api.openweathermap.org/data/2.5/weather";
 const apiKey = "&appid=40a8d93c760fd89e7f9624dda613ae1e&units=metric";
 const url= baseUrl + "?zip=" + zipInput.value + apiKey
