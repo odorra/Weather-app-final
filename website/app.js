@@ -15,6 +15,7 @@ const getData = async () => {
     const call = async () => {
       const response = await request.json()
       return response}
+      return call()
   } catch (error) {
     //code to log error
     console.log(error)
